@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonilSlder from "./TestimonilSlder";
+import TestimonialSlider from "./TestimonialSlider";
 
 type Props = {};
 
@@ -10,7 +10,7 @@ const Testimonial = (props: Props) => {
         Client <span className="text-yellow-400 ">Review</span>
       </h1>
       <div className="pt-[5rem] pb-[4rem] w-[80%] mx-auto">
-        {/* <TestimonilSlder /> */}
+        <TestimonialSlider />
       </div>
     </div>
   );

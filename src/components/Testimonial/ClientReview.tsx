@@ -26,7 +26,7 @@ const ClientReview = (props: Props) => {
         <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
       </div>
       <h1 className="text-[25px] text-white mt-[1rem]">{props.name} </h1>
-      <p className="text-[18rem] text-while opacity-75 mt-[0.5rem] mb-[1.4rem]">
+      <p className="text-[18px] text-white opacity-75 mt-[0.5rem] mb-[1.4rem]">
         {props.role}
       </p>
       <p className="text-[16px] text-white opacity-50 w-[90%] md:w-[50%] mx-auto ">

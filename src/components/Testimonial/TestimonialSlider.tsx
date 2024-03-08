@@ -1,3 +1,4 @@
+"use client";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -21,9 +22,7 @@ const responsive = {
   },
 };
 
-type Props = {};
-
-const TestimonilSlder = (props: Props) => {
+const TestimonialSilder = () => {
   return (
     <Carousel
       additionalTransfrom={0}
@@ -35,27 +34,24 @@ const TestimonilSlder = (props: Props) => {
       responsive={responsive}
       itemClass="item"
     >
-      {/* <ClientReview
-        image="/images/b1.jpg"
+      <ClientReview
+        image="/images/c1.jpg"
         name="Loique Nangna"
         role="Web dev"
       />
-      <ClientReview image="/images/b2.jpg" name="Fonteh L" role="UX Design" />
+      <ClientReview image="/images/c2.jpg" name="Fonteh L" role="UX Design" />
       <ClientReview
-        image="/images/b1.jpg"
+        image="/images/c1.jpg"
         name="Nathan Foe"
         role="ML engineer"
       />
       <ClientReview
-        image="/images/b2.jpg"
+        image="/images/c2.jpg"
         name="Fogouang"
         role="Data Scientist"
-      /> */}
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
+      />
     </Carousel>
   );
 };
 
-export default TestimonilSlder;
+export default TestimonialSilder;
