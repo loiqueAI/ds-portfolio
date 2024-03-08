@@ -9,7 +9,7 @@ import Testimonial from "@/components/Testimonial/Testimonial";
 
 const HomePage = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <div>
         <Hero />
         <Service />
