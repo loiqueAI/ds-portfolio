@@ -29,6 +29,7 @@ const Navbar = () => {
         <Link href="/project">Project </Link>
         <Link href="/about">About </Link>
         <Link href="/contact">Contact </Link>
+        <Link href="/skills">Skills </Link>
       </ul>
       {/* Burger menu pour les écrans de petite taille */}
       <div className="md:hidden relative">
