@@ -7,6 +7,15 @@ import Image from "next/image";
 type Props = {};
 
 const Hero = (props: Props) => {
+  const handleDownloadCV = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/loique-ds-cv.pdf";
+    downloadLink.download = "loique-ds-cv.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
+
   return (
     <div className="h-[88vh] ">
       <Particle />
@@ -26,7 +35,10 @@ const Hero = (props: Props) => {
             technology. 😊
           </p>
           <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex-row items-center sm:space-x-6">
-            <button className="px-[2rem] hover:bg-yellow-400  transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+            <button
+              onClick={handleDownloadCV}
+              className="px-[2rem] hover:bg-yellow-400  transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+            >
               <p>Download CV</p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </button>
@@ -35,7 +47,7 @@ const Hero = (props: Props) => {
         <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px]">
           <Image
             className="object-cover rounded-full"
-            src="/images/u1.jpg"
+            src="/images/loic.jpg"
             alt="logo"
             layout="fill"
           />

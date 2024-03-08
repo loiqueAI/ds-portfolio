@@ -1,10 +1,18 @@
-import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
+"use client";
 import React from "react";
 import Image from "next/image";
+import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 
-type Props = {};
+const About = () => {
+  const handleDownloadCV = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/loique-ds-cv.pdf";
+    downloadLink.download = "loique-ds-cv.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
 
-const About = (props: Props) => {
   return (
     <div className="pt-[4rem] md-pt-[8rem] pb-[5rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
@@ -27,7 +35,10 @@ const About = (props: Props) => {
               advancement of AI technology. 😊
             </p>
           </div>
-          <button className="px-[2rem] hover:bg-yellow-400  transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+          <button
+            className="px-[2rem] hover:bg-yellow-400  transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+            onClick={handleDownloadCV}
+          >
             <p>Download CV</p>
             <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
           </button>
