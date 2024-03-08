@@ -21,8 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-primary">
         <div>
-          <main className="text-white container mx-auto px-4">
+          <div className="fixed top-0 left-0 right-0 z-50">
             <NavBar />
+          </div>
+          <main className="text-white container mx-auto px-4 mt-16">
             {children}
             {/* <Hero /> */}
             <Footer />
