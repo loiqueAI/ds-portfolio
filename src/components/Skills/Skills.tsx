@@ -80,7 +80,7 @@ const Skills: React.FC<Props> = () => {
   ];
 
   return (
-    <div className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#09101a]">
+    <div className="pt-[4rem] md:pt-[8rem] pb-[5rem]">
       <h1 className="heading">
         Education & <span className="text-yellow-400">Skill</span>
       </h1>
