@@ -85,7 +85,7 @@ const Skills: React.FC<Props> = () => {
         Education & <span className="text-yellow-400">Skill</span>
       </h1>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white">
           {skillsData.map((skill, index) => (
             <SkillsItem
               key={index}
